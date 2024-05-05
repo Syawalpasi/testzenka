@@ -1,0 +1,151 @@
+/* style.css */
+
+/* Active link styles */
+.menu .nav-link.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px; /* Ubah ketebalan garis sesuai kebutuhan */
+    background-color: orange; /* Warna garis bawah yang diinginkan */
+    transition: all 0.3s; /* Animasi transisi */
+  }
+  
+  /* Hover link styles */
+  .menu .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Default link styles */
+  .menu .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px; /* Ubah ketebalan garis sesuai kebutuhan */
+    background-color: transparent; /* Warna garis default */
+    transition: all 0.3s; /* Animasi transisi */
+  }
+
+  .navbar-bg {
+  background-color: white; /* Memberikan warna putih pada background navbar */
+  transition: all 0.3s ease; /* Animasi transisi */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay:hover {
+  opacity: 1;
+}
+
+.image-name {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  transition: font-size 0.3s ease;
+}
+
+.gallery-image {
+  transition: transform 0.3s ease;
+}
+.gallery-image:hover,
+.gallery-image.active {
+  transform: scale(4); /* Gambar akan menjadi 50% lebih besar saat diklik */
+}
+
+
+/* Gaya untuk tombol */
+.orange-button {
+  background-color: orange; /* Warna latar belakang oranye */
+  color: white; /* Warna teks putih */
+  padding: 10px 20px; /* Padding untuk memberi jarak di dalam tombol */
+  border: none; /* Menghapus batasan tombol default */
+  border-radius: 8px; /* Menambahkan radius untuk sudut membulat */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan ringan */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
+  
+  /* Menambahkan transisi yang halus untuk semua properti */
+  transition: background-color 0.3s ease;
+}
+
+/* Efek hover dengan mengubah warna latar belakang menjadi toska */
+.orange-button:hover {
+  background-color: #1F9DBB; /* Warna latar belakang saat hover */
+}
+
+/* Mengatur gambar */
+img.img-fluid {
+  /* Ukuran maksimal gambar adalah 80% */
+  max-width: 100%;
+  /* Menggunakan transisi untuk animasi yang halus */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efek hover pada gambar */
+img.img-fluid:hover {
+  /* Memperbesar gambar saat dihover */
+  transform: scale(1.1);
+}
+
+/* Gaya responsif untuk teks dan gambar */
+
+/* Media query untuk layar ekstra kecil (mobil) */
+@media (max-width: 576px) {
+  /* Mengatur ukuran font untuk layar ekstra kecil */
+  .fs-6 {
+      font-size: 14px;
+  }
+  .fs-5 {
+      font-size: 16px;
+  }
+  .fs-4 {
+      font-size: 18px;
+  }
+  .fs-3 {
+      font-size: 20px;
+  }
+}
+
+/* Media query untuk layar kecil (tablet) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Mengatur ukuran font untuk layar kecil */
+  .fs-6 {
+      font-size: 16px;
+  }
+  .fs-5 {
+      font-size: 18px;
+  }
+  .fs-4 {
+      font-size: 20px;
+  }
+  .fs-3 {
+      font-size: 22px;
+  }
+}
+
+/* Anda dapat menambahkan media queries tambahan untuk ukuran layar yang lebih besar sesuai kebutuhan */
+
+/* Gaya untuk gambar */
+/* Gaya untuk gambar */
+.responsive-image {
+  transition: transform 0.3s ease-in-out; /* Transisi yang halus untuk transformasi */
+}
+
+/* Efek hover untuk gambar */
+.responsive-image:hover {
+  transform: scale(1.1) translateX(10px) translateY(10px); /* Perbesar gambar dan geser */
+}
+

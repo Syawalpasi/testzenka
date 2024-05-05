@@ -1,0 +1,147 @@
+#login-form {
+  width: 400px;
+  max-width: 100%;
+  margin: 50px auto;
+  background-color: rgb(30, 218, 255);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+#login-form h1 {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+#login-form form {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+#login-form form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+}
+
+#login-form form input[type="text"],
+#login-form form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+#login-form form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(30, 218, 255);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#login-form form input[type="submit"]:hover {
+  background-color: rgb(255, 145, 0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.mynav li a {
+  color: #424242;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  padding: 8px 5px;
+  font-size: 16px;
+  -webkit-transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  
+}
+
+.mynav li a.active{
+  background: #4F5C92;
+  color: #ffff;
+}
+.mynav li a:hover{
+  background: #2C3453;
+  color: rgb(255, 255, 255);
+}
+.d-flex{
+  background-color: #EFF2FF;
+  border-width: 100px;
+}
+.logout{
+  text-decoration: none;
+  color: #424242;
+}
+
+/* CSS untuk efek hover oranye pada Nav.Link */
+.nav-link:hover {
+  color: orange; /* Warna oranye saat dihover */
+}
+
+/* Styling untuk navbar-container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa; /* Warna latar navbar */
+}
+
+/* Styling untuk logo */
+.logo {
+  width: 50px; /* Ubah sesuai kebutuhan */
+  height: 50px; /* Ubah sesuai kebutuhan */
+}
+
+/* Styling untuk teks dashboard */
+.dashboard-text h4 {
+  margin: 0;
+}
+
+/* CSS untuk efek hover oranye pada Nav.Link */
+.nav-link:hover,
+.nav-link:active {
+    color: orange; /* Warna oranye saat dihover atau diaktifkan */
+}
+
+/* Styling untuk navbar-container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa; /* Warna latar navbar */
+}
+
+/* Styling untuk logo */
+.logo {
+    width: 50px; /* Ubah sesuai kebutuhan */
+    height: 50px; /* Ubah sesuai kebutuhan */
+}
+
+/* Styling untuk teks dashboard */
+.dashboard-text h4 {
+    margin: 0;
+}
+

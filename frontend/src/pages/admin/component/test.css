@@ -1,0 +1,26 @@
+/* Gaya untuk tombol */
+.orange-button {
+  background-color: orange; /* Warna latar belakang oranye */
+  color: white; /* Warna teks putih */
+  padding: 10px 20px; /* Padding untuk memberi jarak di dalam tombol */
+  border: none; /* Menghapus batasan tombol default */
+  border-radius: 8px; /* Membulatkan sudut tombol */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Bayangan ringan */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
+  
+  /* Transisi halus untuk semua properti */
+  transition: background-color 0.3s ease;
+}
+
+/* Efek hover mengubah warna latar belakang menjadi toska */
+.orange-button:hover {
+  background-color: #1F9DBB; /* Warna latar belakang saat hover */
+}
+
+/* Gaya untuk container tombol */
+.button-container {
+  display: flex; /* Menggunakan Flexbox */
+  justify-content: center; /* Memposisikan tombol di tengah */
+  align-items: center; /* Memposisikan tombol secara vertikal */
+  height: 100vh; /* Mengatur ketinggian ke 100% tinggi viewport */
+}
